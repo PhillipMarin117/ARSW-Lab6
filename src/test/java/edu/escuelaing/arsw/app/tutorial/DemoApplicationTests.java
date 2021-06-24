@@ -1,4 +1,4 @@
-package edu.escuelaing.arsw.app;
+package edu.escuelaing.arsw.app.tutorial;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
