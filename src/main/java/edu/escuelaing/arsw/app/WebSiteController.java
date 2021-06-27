@@ -1,17 +1,20 @@
-package edu.escuelaing.arsw.app.board;
+package edu.escuelaing.arsw.app;
+
+import java.util.*;
+import java.util.logging.*;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @SpringBootApplication
 @RestController
@@ -35,7 +38,7 @@ public class WebSiteController {
         String name = (String) request.getSession().getAttribute("name");
         // System.out.println(SharedMemory.getInstance().toString());
         return "{\"status\":\"Greetings from Spring Boot. " + name + ". " + java.time.LocalDate.now() + ", " +
-            java.time.LocalTime.now() + ". " + "The server is Runnig!\"}";
+                java.time.LocalTime.now() + ". " + "The server is Runnig!\"}";
     }
 
     @GetMapping("/setname")
@@ -57,7 +60,7 @@ public class WebSiteController {
             String[] a = x.split(",");
             Double dx = Double.parseDouble(a[0]);
             Double dy = Double.parseDouble(a[1]);
-            SharedMemory.getInstance().addd(new Data(name,dx,dy)); 
+            SharedMemory.getInstance().addd(new Data(name,dx,dy));
         }
 
     }

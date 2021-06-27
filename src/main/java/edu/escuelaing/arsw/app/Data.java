@@ -1,4 +1,4 @@
-package edu.escuelaing.arsw.app.board;
+package edu.escuelaing.arsw.app;
 
 public class Data {
     private Double x;
@@ -26,7 +26,7 @@ public class Data {
     public void setY(Double y) {
         this.y = y;
     }
-    
+
     public String getUser() {
         return user;
     }
