@@ -59,7 +59,7 @@ https://board-multi-online.herokuapp.com/TableroOnline.html
 ![](img/HerokuTablero.png)
 
 A continuación puede evidenciar que el tablero es multiusuario ya que junto a un compañero lo probamos para notar que lo que uno escribiera el otro también lo vería
-![](img/HerokuMulti.png)
+![](img/HerokuMultiT.png)
 
 
 ## Construido con
